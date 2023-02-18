@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genious Geometry</title>
- 
+ <link href="custom.css" rel="stylesheet"></script>
     <!-- Link of tailwind css -->
 <script src="https://cdn.tailwindcss.com"></script>
+
 
 <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
@@ -89,9 +90,9 @@
                     <h1 class="card-title font-bold text-3xl">Triangle</h1>
                     <small>Area (A) = 0.5 x b x h</small>
                     <small class="d-flex">
-                        <input type="text" placeholder="b" class="input input-bordered input-success w-12 input-xs" />
+                        <input id="triangle-b" type="text" placeholder="b" class="input input-bordered input-success w-12 input-xs" />
                         <small>cm</small>
-                        <input type="text" placeholder="h" class="input input-bordered input-success w-12 input-xs" />
+                        <input id="triangle-h" type="text" placeholder="h" class="input input-bordered input-success w-12 input-xs" />
                         <small>cm</small>
                     </small>
                     <div class="card-actions justify-center pt-10 pb-3">
@@ -146,13 +147,18 @@
                 </div>
             </div>
             <!-- Take a Card for Area calculation   -->
-            <div class="card lg:w-72 bg-base-100 shadow-xl bg-blue-900 pt-2 rounded-xl text-center ">
-                <div class="card-body text-white text-center " >
+            <div class="card lg:w-72 m-0 bg-base-100 shadow-xl bg-blue-900 pt-2 rounded-xl text-start ">
+                <div class="card-body text-white text-start p-0" >
                     <h2 class=" font-bold text-2xl text-center">
                     Area Calculation
                     </h2>
-                    <div>
-                        <ol id="area-calculation" class="mt-5 mx-5"></ol>
+                    <div class="">
+                        <ol id="area-calculation" class="mt-5 m-0 pl-4 "> 
+                       
+                        
+                    
+                        </ol>
+                       
                     </div>
                 </div>
             </div>
