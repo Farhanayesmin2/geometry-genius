@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+        <!-- Link of tailwind css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <main>
+    <h1 class="text-3xl text-center text-red-900 mt-12">There are some FAQ.</h1>
+    <div id="geometry-container" class="grid lg:grid-cols-2 gap-8 mx-10 sm:grid-cols-1">
+
+    <div class="card w-[100%] bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title text-bold">What is dom? What's the purpose of dom?</h2>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs
+            can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way,
+            programming languages can interact with the page.<br>
+         It defines the logical structure of documents. </p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+        </div>
+    <div class="card w-[100%] bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title">How to element select from dom?</h2>
+            <p>There are many different way to select element:<br>
+               1. getElementsByClassName – search element by class name. <br>
+               2. querySelectorAll – returns elements that match the specified selector <br>
+               3. getElementById – search element by element_id.<br>
+               4. getElementsByTagName – search element by tag name (e.g., span, div)<br>
+               5. getElementsByName – search element by name attribute.<br>
+               6. querySelector – returns the first element that matches the specified selector
+            </p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+        </div>
+    <div class="card w-[100%] bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title">What is event bubble?</h2>
+            <p>Event bubbling and capturing are two ways of event propagation in the HTML DOM API, when an event occurs in an element
+            inside another element, and both elements have registered a handle for that event. The event propagation mode determines
+            in which order the elements receive the event.</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+        </div>
+    <div class="card w-[100%] bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title">What is call back function?And what's the purpose of call back funtion?</h2>
+
+            <p>Actually, call back called if self via argument.On the other way,<br>
+                A callback function is a function passed into another function as an argument, which is then invoked inside the outer
+            function to complete some kind of routine or action. The above example is a synchronous callback, as it is executed
+            immediately.</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+   </main>
+   <div class="text-center my-6">
+
+  
+<a  href="index.html"><button class="btn btn-danger btn-outline btn-lg">Back To Home</button></a>
+</div>
+</body>
+</html>
