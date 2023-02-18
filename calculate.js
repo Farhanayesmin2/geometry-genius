@@ -156,7 +156,7 @@ document
         }
     });
 document
-    .getElementById("parallelogram-btn")
+    .getElementById("rhombus-btn")
     .addEventListener("click", function (event) {
         if (event.target.innerText == "Calculate") {
             const geometryName =
@@ -173,18 +173,19 @@ document
             const name = empty + geometryName;
 
             // This is part for calculation.
-            const parallelogramFor10 = getTheInnerTextValue("number-10");
-            const parallelogramFor12 = getTheInnerTextValue("number-12");
+            const fixedNumber = 0.5;
+            const rhombusFor16 = getTheInnerTextValue("rhombus-16");
+            const rhombusFor8 = getTheInnerTextValue("rhombus-8");
 
-            // Multiply the  Parallelogram area
-            const multiplyParallelogram = parallelogramFor10 * parallelogramFor12;
+            // Multiply the Rhombus area
+            const multiplyRhombus =fixedNumber * rhombusFor16 * rhombusFor8;
 
             // Take a area-calculation list from id="area-calculation".
             const geometryList = document.getElementById("area-calculation");
             const li = document.createElement("li");
             li.id = "newClass";
             li.innerHTML = `
-        <span >${name}</span><span class="centimeter-btn pl-1 " id="innerTextSet">${multiplyParallelogram}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
+        <span >${name}</span><span class="centimeter-btn pl-1 " id="innerTextSet">${multiplyRhombus}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
          
          </span>
          
