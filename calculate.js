@@ -12,8 +12,17 @@ function getTheValue(number) {
 
        
     
-    }
+}
+    
+function randomColorAdded() {
+     const cards = document.querySelectorAll('.card');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
+}
+ 
 
 
 
@@ -40,8 +49,8 @@ function setTheValueInnerText(number, newValue) {
 document
     .getElementById("triangle-btn")
     .addEventListener("click", function (event) {
-     
-
+      
+      
         if (event.target.innerText == "Calculate") {
             const geometryName =
                 event.target.parentNode.parentNode.children[0].innerText;
@@ -64,13 +73,18 @@ document
             const multiplyTriangle = fixedNumber * triangleForB * triangleForH;
 
            
-
+// For validation number
 if (Number.isNaN(multiplyTriangle)) {
   return alert('The value is not a valid number.');
 } 
 
+// added ramdom color
+         const cards = document.querySelector('.card1');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
-        
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
 
 
             // Take a area-calculation list from id="area-calculation".
@@ -85,11 +99,7 @@ if (Number.isNaN(multiplyTriangle)) {
         
         
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+          
 
             geometryList.appendChild(li);
             }
@@ -117,7 +127,7 @@ document
             const rectangleForI = getTheValue("rectangle-i");
             // Multiply the  rectangle area
             const multiplyRectangle = rectangleForW * rectangleForI;
-
+// For validation number
 if (Number.isNaN(multiplyRectangle)) {
   return alert('The value is not a valid number.');
 } 
@@ -131,11 +141,14 @@ if (Number.isNaN(multiplyRectangle)) {
          
          </span>
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+        // added ramdom color
+         const cards = document.querySelector('.card2');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
+  
 
             geometryList.appendChild(li);
         }
@@ -143,6 +156,7 @@ if (Number.isNaN(multiplyRectangle)) {
 document
     .getElementById("parallelogram-btn")
     .addEventListener("click", function (event) {
+  
         if (event.target.innerText == "Calculate") {
             const geometryName =
                 event.target.parentNode.parentNode.children[0].innerText;
@@ -176,12 +190,13 @@ document
         
         
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+          // added ramdom color
+         const cards = document.querySelector('.card3');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
             geometryList.appendChild(li);
         }
     });
@@ -222,12 +237,13 @@ document
         
         
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+           // added ramdom color
+         const cards = document.querySelector('.card4');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
             geometryList.appendChild(li);
         }
     });
@@ -268,11 +284,13 @@ document
         
         
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+            // added ramdom color
+         const cards = document.querySelector('.card5');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
 
             geometryList.appendChild(li);
         }
@@ -314,11 +332,13 @@ document
         
         
         `;
-            const disabled = event.target.setAttribute("disabled", "true");
-            // Change the color of disable button
-            if (disabled != false) {
-                event.target.style.backgroundColor = "rgb(203 213 225)";
-            }
+            // added ramdom color
+         const cards = document.querySelector('.card6');
+              // Generate a random color using Math.random()
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+      // Set the background color of the body element
+    cards.style.backgroundColor = randomColor;
 
             geometryList.appendChild(li);
         }
