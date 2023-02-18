@@ -30,6 +30,32 @@ document.getElementById('geometry-container').addEventListener("click", function
     }   
     });
        
+
+    // Create common function for Calculate function
+    // Create a function for Number type input field.
+ function getTheValue(number) {
+    const getValueNumber = document.getElementById(number);
+    const getValueNumberString = getValueNumber.value;
+    const getTheNumber = parseInt(getValueNumberString);
+    return getTheNumber;
+} 
+// Create a function for innerText Value.
+function getTheInnerTextValue(innerValue) {
+    const getValueInnerText = document.getElementById(innerValue);
+    const getValueInnerTextString = getValueInnerText.innerText;
+    const getTheTextValue = parseInt(getValueInnerTextString);
+    return getTheTextValue;
+} 
+
+
+// Create a function for set the innerText
+function setTheValueInnerText(number, newValue) {
+    const setValueNumber = document.getElementById(number);
+    const setValueNumberString = setValueNumber.innerText;
+    const setTheTextNumber = parseInt(setValueNumberString);
+    setValueNumber.innerText = newValue;
+    return  newValue;
+}
     
 
 
