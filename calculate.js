@@ -1,14 +1,23 @@
 // Create common function for Calculate function
 // Create a function for Number type input field.
 function getTheValue(number) {
-
+   
         const getValueNumber = document.getElementById(number);
         const getValueNumberString = getValueNumber.value;
         const getTheNumber = parseInt(getValueNumberString);
-        getValueNumber.value = " ";
-        return getTheNumber;
+ getValueNumber.value = " ";
+   
+         return getTheNumber;
+
+
+       
     
     }
+
+
+
+
+
 
 // Create a function for innerText Value.
 function getTheInnerTextValue(innerValue) {
@@ -31,12 +40,7 @@ function setTheValueInnerText(number, newValue) {
 document
     .getElementById("triangle-btn")
     .addEventListener("click", function (event) {
- 
-
-
- 
-                
-       
+     
 
         if (event.target.innerText == "Calculate") {
             const geometryName =
@@ -58,6 +62,15 @@ document
  const triangleForH = getTheValue("triangle-h");
 
             const multiplyTriangle = fixedNumber * triangleForB * triangleForH;
+
+           
+
+if (Number.isNaN(multiplyTriangle)) {
+  return alert('The value is not a valid number.');
+} 
+
+
+        
 
 
             // Take a area-calculation list from id="area-calculation".
@@ -104,6 +117,10 @@ document
             const rectangleForI = getTheValue("rectangle-i");
             // Multiply the  rectangle area
             const multiplyRectangle = rectangleForW * rectangleForI;
+
+if (Number.isNaN(multiplyRectangle)) {
+  return alert('The value is not a valid number.');
+} 
 
             // Take a area-calculation list from id="area-calculation".
             const geometryList = document.getElementById("area-calculation");
