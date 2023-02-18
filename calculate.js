@@ -59,16 +59,19 @@ document.getElementById('triangle-btn').addEventListener('click', function (even
         
         const empty = geometryCountLength + ".  ";
         const name = empty + geometryName;
+
+        // This part for triangle calculation
+        const fixedNumber = 0.5;
         const triangleForB = getTheValue('triangle-b');
         const triangleForH = getTheValue('triangle-h');
        
-        const add = triangleForB + triangleForH;
+        const multiplyTriangle= fixedNumber * triangleForB * triangleForH;
         // Take a area-calculation list from id="area-calculation".
         const geometryList = document.getElementById('area-calculation');
         const li = document.createElement("li");
         li.id = "newClass";
         li.innerHTML = `
-        <span >${name}</span><span class="centimeter-btn px-2 " id="innerTextSet">${add}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
+        <span >${name}</span><span class="centimeter-btn px-2 " id="innerTextSet">${multiplyTriangle}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
          
          </span>
     
@@ -102,14 +105,14 @@ document.getElementById('rectangle-btn').addEventListener('click', function (eve
         const rectangleForW = getTheValue('rectangle-w');
         const rectangleForI = getTheValue('rectangle-i');
         // Multiply the  rectangle area
-        const add = rectangleForW * rectangleForI;
+        const multiplyRectangle = rectangleForW * rectangleForI;
 
         // Take a area-calculation list from id="area-calculation".
         const geometryList = document.getElementById('area-calculation');
         const li = document.createElement("li");
         li.id = "newClass";
         li.innerHTML = `
-        <span >${name}</span><span class="centimeter-btn px-2 " id="innerTextSet">${add}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
+        <span >${name}</span><span class="centimeter-btn px-2 " id="innerTextSet">${multiplyRectangle}cm<sup>2</sup> <span class="ps-2"> <button  class="btn btn-accent btn-xs">Convert m<sup>2</sup></button></span> 
          
          </span>
          <br>
